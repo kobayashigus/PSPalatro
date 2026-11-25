@@ -1,0 +1,12 @@
+EBOOT.PBP
+PARAM.SFO
+pspalatro.elf
+Balatro.exe
+*.o
+.vscode/
+balatro_exe_dump/
+
+# saves e cache gerados em runtime
+saves/
+*.bin
+sfxcache.pcm

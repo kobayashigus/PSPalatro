@@ -1,0 +1,44 @@
+PSPalatro - correção para PSP real
+==================================
+
+Arquivo: EBOOT.PBP
+Build: 22/10/2026 20:29
+Tamanho: 1.589.878 bytes
+SHA-256: FB964A3CB60F6E9E020618F4FE015E1C1767F1160D88BDE96729EC790C2FFACE
+
+O que foi corrigido
+-------------------
+- Input morto no PSP real (START/Cross não respondiam na tela de título).
+  A causa era a tabela de imports do PSP: os stubs de sceUtility ficavam
+  divididos em dois blocos e podiam corromper o stub vizinho de sceCtrl.
+  Agora todos os stubs são montados na ordem correta.
+- O save antigo é migrado automaticamente para o layout novo, sem apagar
+  o progresso (cartas, baralho, jokers, dinheiro, ante etc.).
+- Corrigidos bugs de áudio e de leitura do arquivo ZIP que podiam travar
+  no hardware.
+- START também confirma no menu de título.
+
+Como instalar
+-------------
+1. Faça backup da pasta do jogo no Memory Stick, principalmente de:
+   saves/autosave.bin
+   saves/profile.bin
+2. Copie o EBOOT.PBP deste pacote para a pasta do PSPalatro no Memory Stick,
+   substituindo o EBOOT.PBP antigo. Exemplo:
+   PSP/GAME/PSPalatro/EBOOT.PBP
+3. NÃO apague nem substitua a pasta saves. O jogo lê o save antigo e faz a
+   migração automaticamente na primeira vez.
+4. Abra o jogo pelo XMB.
+
+Observações
+-----------
+- O primeiro carregamento do save antigo pode levar alguns segundos.
+- Este pacote contém somente o EBOOT.PBP; não inclui saves de teste.
+- O build foi validado no PPSSPP (título, Continue Autosave, New Run,
+  início de blind, pausa, salvar e carregar). Não havia um PSP físico
+  conectado para o teste final no hardware.
+- Se o jogo abrir mas o input continuar morto no PSP, informe:
+  modelo do PSP, CFW (ex.: 6.61 PRO/ARK) e plugins ativos, especialmente
+  plugins de controle.
+- Se o jogo não abrir, confira se o CFW está ativo e se a pasta está em
+  PSP/GAME (não em PSP/GAME150 ou similar).
