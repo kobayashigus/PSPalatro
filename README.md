@@ -1,11 +1,14 @@
 # PSPalatro
 
+> **This repository is only a modification of the original [Luxotick/pspalatro](https://github.com/Luxotick/pspalatro) project.**
+> It is not a new port, fork from scratch, or independent implementation. All credit for the original PSPalatro project goes to [Luxotick](https://github.com/Luxotick). This repository only contains local changes, fixes and experiments made on top of the original code.
+
 **Work in progress PSP implementation of Balatro.**
 
 This project is still under active development and is open to the community.  
 Feedback, bug reports, suggestions and contributions are welcome.
 
-This repository is based on a fork of the original PSPalatro project by [internalregister](https://github.com/internalregister), with additional updates, fixes and features added by contributors in this version.
+This version is a modification of the original PSPalatro available at [github.com/Luxotick/pspalatro](https://github.com/Luxotick/pspalatro), with additional updates and fixes added locally. See the original repository for its full history and credits.
 
 This is a limited implementation of the game **Balatro** for **Sony's Playstation Portable** console.  
 The project is for legitimate owners of a **Balatro** copy who wish to experience a partial implementation of the game on the PSP.
